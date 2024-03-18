@@ -53,7 +53,7 @@ class LoginController extends Controller
 
         $user = User::create($validatedData);
 
-        return redirect('/login')->with('success', 'Registration successful! Please login');
+        return redirect('/')->with('success', 'Registration successful! Please login');
     }
 
     public function logout(Request $request){
